@@ -45,4 +45,4 @@ plt.xlim(0,1)
 plt.ylim(0,1)
 
 ani = FuncAnimation(fig,animate,interval=10,frames=N)
-ani.save('chaos_game.mp4',fps=N/10,dpi=80)
+ani.save('chaos_game_ST.mp4',fps=N/10)

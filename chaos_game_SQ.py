@@ -38,11 +38,9 @@ def animate(i):
         p[1].append(pt[1])
         sc.set_offsets(np.c_[p[0],p[1]])
 
-        # print("["+str(i)+"] ("+str(p[0][i-1])+","+str(p[1][i-1])+") --> ("+
-        #       str(vertices[0][randv])+","+str(vertices[1][randv])+") = "+str(pt))
     return sc
 
-N = 10**3
+N = 10**5
 k = 1
 dotSize = 10**4/N
 
@@ -58,4 +56,4 @@ plt.xlim(0,1)
 plt.ylim(0,1)
 
 ani = FuncAnimation(fig,animate,interval=10,frames=N)
-ani.save('chaos_game_restricted.mp4',fps=N/10,dpi=80)
+ani.save('chaos_game_SQ.mp4',fps=N/10)
